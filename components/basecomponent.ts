@@ -8,7 +8,11 @@ export abstract class BaseComponent {
         this.mainLocator = mainLocator
     }
 
-    async isDisplayed(): boolean {
+    async getText() {
+        await this.mainLocator.textContent()
+    }
+
+    async isDisplayed() {
         await expect(this.mainLocator).toBeVisible()
     }
 }
