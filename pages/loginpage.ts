@@ -36,4 +36,8 @@ export class LoginPage extends BasePage {
         await this.passwordField.isDisplayed()
         await this.loginButton.isDisplayed()
     }
+
+    async isNotDisplayed() {
+        
+    }
 }
